@@ -42,6 +42,7 @@ def load_data(ticker):
     return data
 
 data = load_data(selected_stock)
+data = data.set_index(pd.DatetimeIndex(data["Date"].values))
 name = yf.Ticker(selected_stock)
 info = yf.Ticker(selected_stock).info
 
