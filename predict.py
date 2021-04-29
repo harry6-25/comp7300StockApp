@@ -42,7 +42,6 @@ def load_data(ticker):
     return data
 
 data = load_data(selected_stock)
-data = data.set_index(pd.DatetimeIndex(data["Date"].values))
 name = yf.Ticker(selected_stock)
 info = yf.Ticker(selected_stock).info
 
@@ -179,7 +178,6 @@ except:
 
 # # # # # # # # # # # # # # # # Prediction using LSTM# # # # # # # # # # # # # # # # # 
 st.header("Prediction with Long Short-term Memory (LSTM)")
-st.write(" ")
 try:
 	# Create a new dataframe with only the 'Close column 
 	LSTM_df = DataReader(selected_stock, data_source='yahoo', start='2019-03-01', end=datetime.now())
