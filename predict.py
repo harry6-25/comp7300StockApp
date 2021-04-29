@@ -32,7 +32,7 @@ st.write('You expressly agree that the use of this app/website is at your sole r
 st.write("The content of this webpage is not an investment advice and does not constitute any offer or solicitation to offer or recommendation of any investment product. It is for general purposes only and does not take into account your individual needs, investment objectives and specific financial circumstances. Investment involves risk.")
 
 # # # # # # input box for stock number # # # # # 
-selected_stock = st.text_input('Select Stock Number for Analysis and Prediction',"0010.HK")
+selected_stock = st.text_input('Select Stock Number for Analysis and Prediction',"0001.HK")
 
 # # # # # # Download Data # # # # # 
 @st.cache(allow_output_mutation=True)
