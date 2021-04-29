@@ -178,7 +178,7 @@ except:
 
 # # # # # # # # # # # # # # # # Prediction using LSTM# # # # # # # # # # # # # # # # # 
 st.header("Prediction with Long Short-term Memory (LSTM)")
-st,write(" ")
+st.write(" ")
 try:
 	# Create a new dataframe with only the 'Close column 
 	LSTM_df = DataReader(selected_stock, data_source='yahoo', start='2019-03-01', end=datetime.now())
