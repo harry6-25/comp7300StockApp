@@ -9,5 +9,5 @@ seaborn
 cufflinks
 keras 
 sklearn
-tensorflow
+tensorflow==2.1.0
 pandas_datareader
